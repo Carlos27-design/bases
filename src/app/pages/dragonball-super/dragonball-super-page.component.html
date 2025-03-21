@@ -1,0 +1,16 @@
+<h1>Dragon Ball page</h1>
+
+<section class="row">
+  <div class="col-12 col-ms-6">
+    <dragonball-character-add
+      (newCharacter)="addCharacter($event)"
+    ></dragonball-character-add>
+  </div>
+
+  <div class="col-12 col-ms-6">
+    <dragonball-character-list
+      listName="Listado de personajes"
+      [characters]="getCharacters()"
+    ></dragonball-character-list>
+  </div>
+</section>
